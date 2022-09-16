@@ -1,3 +1,3 @@
 # Portafolio 
-Bienvenido a mi Proyecto Portafolio
-## [Portafolio](https://github.com/marceloboyano/portafolio)
+Bienvenidos a mi Proyecto Portafolio
+## [Portafolio](https://marceloboyano.github.io/portafolio/)
