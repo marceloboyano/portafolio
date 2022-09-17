@@ -41,11 +41,12 @@ body{
 
 a{
     color: var(--link-color);
-    transition: all 0,5s ease-out;
+    transition: all .5s ease-out; 
 }
 
 a:hover{    
     opacity: 0.75;
+    color: var(--black-color);
 }
 
 h1{
@@ -207,11 +208,20 @@ p{
     outline: thin solid var(--first-color);
     border: 0;
     cursor: pointer;
-    background-color: var(--second-color);
+    background-color: var(--second-color);        
 }
+
+.menu-btn:hover{  
+    outline: thin solid var(--black-color);     
+}
+
+.menu-btn:hover > svg{       
+    fill:var(--black-color);        
+}
+
 .menu-btn svg{
-    fill:var(--first-color);
-}
+    fill:var(--first-color);}
+
 
 .menu{
    position: fixed;
@@ -243,7 +253,7 @@ p{
 
 .menu a:hover{
     background-color: var(--first-color);
-    color:var(--white-color);
+    color:var(--black-color);
 }
 
 @media screen and (min-width:1024px){
@@ -356,7 +366,11 @@ progress::-moz-progress-bar{
     text-align: center;
     text-decoration: none;
     color:var(--white-color);
-    background-color: var(--second-color);
+    background-color: var(--second-color);    
+}
+
+.btn:hover{    
+    color:var(--black-color);    
 }
 
 .container {
@@ -448,8 +462,7 @@ filter: grayscale(1);
     margin-top: -1rem;
 }
 
-.footer {
-    margin-bottom: var(--header-height);
+.footer {   
     padding: 0.5rem;
     text-align: center;
     background-color: var(--third-color);
@@ -478,7 +491,11 @@ filter: grayscale(1);
     color: var(--first-color);
     font-weight: bold;
     font-size: 2rem;
-    text-decoration: none;
+    text-decoration: none;   
+}
+
+.logo a:hover{   
+    color: var(--black-color);   
 }
 
 .portfolio-card {
@@ -643,13 +660,13 @@ filter: grayscale(1);
 }
 
 .portfolio > .container{   
-    grid-template-columns: repeat(3, 30%); 
+    grid-template-columns: repeat(4, 1fr); 
     padding-top: 1.5rem;    
 }
 
 
 .portfolio .section-title{
-    grid-column: span 3;       
+    grid-column: span 4;       
 }
 
 .services > .container{   
